@@ -16,24 +16,28 @@
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   width: 100%;
+  height: 100%;
 }
 #nav {
   padding: 30px;
   a {
     font-weight: bold;
-    color: #736AFF;
+    color: #A6B0FA;
     &.router-link-exact-active {
       color: #42b983;
     }
     text-decoration: none;
   }
-  border-bottom: 1px solid;
 }
 
 #todo-panel {
-  width: 100%;
-  height: 100%;
-  background-color: cornflowerblue;
-
+  min-height: calc(100vh - 50px);
+  background-color: #FAEDF9;
 }
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
 </style>
